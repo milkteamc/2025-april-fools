@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>奶茶伺服器測試服申請</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="form-container">
+        <form id="userInfoForm">
+            <h2>請填寫您的基本資訊</h2>
+            <div class="form-group">
+                <label for="name">真實姓名 (讓我們進行資料分析):</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="minecraftName">Minecraft 名稱 (讓我們將您加入白名單):</label>
+                <input type="text" id="minecraftName" name="minecraftName" required placeholder="例如：your_username">
+                <small>請輸入您的 Minecraft 名稱</small>
+            </div>
+            <div class="form-group">
+                <label for="email">Email (讓我們能與您聯繫):</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <p><span class="small-text">我們致力於保護您的個人資料安全。您所填寫的資訊將被嚴密保護，承諾不會外流給任何第三方。</span></p>
+            </div>
+            <button type="submit" id="submitBtn">提交</button>
+            <p id="errorMessage" class="error-message" style="display: none;"></p>
+        </form>
+    </div>
+
+    <video id="fullscreen-video" src="https://2025-video.pages.dev/192d9a98d782d9c74c96f09db9378d93.mp4" controls style="display: none;">
+        你他媽用 IE？
+    </video>
+
+    <script src="script.js"></script>
+</body>
+</html>
